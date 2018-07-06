@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tekin TencentCAPTCHA Example</title>
+</head>
+<body>
+	 <p>Complete the Tekin TencentCAPTCHA then submit the form.</p>
+    <form id="login-form" action="login.php" method="post">
+        <fieldset>
+            <legend>An example form</legend>
+            <p>Example input A: <input type="text" name="ex-a" value="foo"></p>
+            <p>Example input B: <input type="text" name="ex-b" value="bar"></p>
+
+             <!-- 验证码票据验证数据隐藏表单 -->
+           <input type="hidden" id="ticket" name="Ticket" value="">
+            <input type="hidden" id="randstr" name="Randstr" value="">
+            <!-- 验证码票据验证数据隐藏表单 end -->
+
+            <p>
+              <input type="button" id="TencentCaptcha" data-appid="2050171219" data-cbfn="myTCaptchaCallback" value="登录">
+            </p>
+
+        </fieldset>
+    </form>
+ <script type="text/javascript" src="https://ssl.captcha.qq.com/TekinTCaptcha.js"></script>
+ <script type="text/javascript">
+
+function myTCaptchaCallback(res){
+	console.log(res)
+    var ticket = document.getElementById("ticket");
+    var randstr = document.getElementById("randstr");
+   
+    // res（未通过验证）= {ret: 1, ticket: null}
+    // res（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
+    if(res.ret === 0){
+    	/*将获取的票据信息写入到表单隐藏域中*/
+        ticket.value=res.ticket;
+        randstr.value=res.randstr;
+        /* 提交表单*/
+        document.getElementById("login-form").submit();
+    }
+}
+</script>
+</body>
+</html>

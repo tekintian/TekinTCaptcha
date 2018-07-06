@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="src\autoload.php" verbose="true">
+     <testsuites>
+        <testsuite name="TekinTCaptcha">
+            <directory suffix="Test.php">./tests/TekinTCaptcha</directory>
+       </testsuite>
+    </testsuites>
+    
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/TekinTCaptcha</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="./reports" charset="UTF-8"/>
+    </logging>
+</phpunit>

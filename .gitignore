@@ -1,0 +1,5 @@
+/composer.lock
+/vendor/
+/reports/
+*.sublime-project
+*.sublime-workspace
