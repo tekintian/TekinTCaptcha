@@ -1,13 +1,13 @@
 {
-    "name": "tekintian/TekinTCaptcha",
+    "name": "tekintian/tekintcaptcha",
     "description": "腾讯验证码, 腾讯防水墙, 验证码, 滑动验证码, 智能滑动验证码PHP扩展, TekinTCaptcha - A Client library for Tencent Captcha, a service that protect websites from spam and abuse.",
     "type": "library",
     "keywords": ["滑动验证码","腾讯验证码","验证码","腾讯防水墙", "智能滑动验证码", "tencent", "TencentCaptcha", "captcha", "spam", "abuse"],
     "homepage": "http://tekin.yunnan.ws/",
     "license": "BSD-3-Clause",
     "support": {
-        "forum": "https://tekin.yunnan.ws/TekinTCaptcha",
-        "source": "https://github.com/tekintian/TekinTCaptcha"
+        "forum": "https://tekin.yunnan.ws/tekintcaptcha",
+        "source": "https://github.com/tekintian/tekintcaptcha"
     },
     "require": {
         "php": ">=5.6"
