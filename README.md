@@ -1,9 +1,9 @@
 # TekinTCaptcha PHP client library
 ## 基于Google PHP项目设计思想实现的腾讯滑动智能验证码实现PHP中间件。
 
-[![Build Status](https://travis-ci.org/tekintian/TekinTCaptcha.svg)](https://travis-ci.org/tekintian/TekinTCaptcha)
-[![Latest Stable Version](https://poser.pugx.org/tekintian/TekinTCaptcha/v/stable.svg)](https://packagist.org/packages/tekintian/TekinTCaptcha)
-[![Total Downloads](https://poser.pugx.org/tekintian/TekinTCaptcha/downloads.svg)](https://packagist.org/packages/tekintian/TekinTCaptcha)
+[![Build Status](https://travis-ci.org/tekintian/tekintcaptcha.svg)](https://travis-ci.org/tekintian/tekintcaptcha)
+[![Latest Stable Version](https://poser.pugx.org/tekintian/tekintcaptcha/v/stable.svg)](https://packagist.org/packages/tekintian/tekintcaptcha)
+[![Total Downloads](https://poser.pugx.org/tekintian/tekintcaptcha/downloads.svg)](https://packagist.org/packages/tekintian/tekintcaptcha)
 
 * Project page: http://tekin.yunnan.ws/TekinTCaptcha/
 * Repository: https://github.com/tekintian/TekinTCaptcha
@@ -22,7 +22,7 @@ This is Tencent Captcha code that provides plugins for third-party integration w
 
 [Composer](https://getcomposer.org/) is a widely used dependency manager for PHP
 packages. This TekinTCaptcha client is available on Packagist as
-[`google/recaptcha`](https://packagist.org/packages/tekintian/TekinTCaptcha) and can be
+[`google/recaptcha`](https://packagist.org/packages/tekintian/tekintcaptcha) and can be
 installed either by running the `composer require` command or adding the library
 to your `composer.json`. To enable Composer for you project, refer to the
 project's [Getting Started](https://getcomposer.org/doc/00-intro.md)
@@ -31,13 +31,13 @@ documentation.
 To add this dependency using the command, run the following from within your
 project directory:
 ```
-composer require tekintian/TekinTCaptcha "~1.0"
+composer require tekintian/tekintcaptcha "~1.0"
 ```
 
 Alternatively, add the dependency directly to your `composer.json` file:
 ```json
 "require": {
-    "tekintian/TekinTCaptcha": "~1.0"
+    "tekintian/tekintcaptcha": "~1.0"
 }
 ```
 
