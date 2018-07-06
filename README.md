@@ -1,7 +1,6 @@
 # TekinTCaptcha PHP client library
 ## 基于Google PHP项目设计思想实现的腾讯滑动智能验证码实现PHP中间件。
-
-[![Build Status](https://travis-ci.org/tekintian/TekinTCaptcha.svg)](https://travis-ci.org/tekintian/TekinTCaptcha)
+[![Build Status](https://travis-ci.org/tekintian/TekinTCaptcha.svg?branch=master)](https://travis-ci.org/tekintian/TekinTCaptcha)
 [![Latest Stable Version](https://poser.pugx.org/tekintian/tekintcaptcha/v/stable.svg)](https://packagist.org/packages/tekintian/tekintcaptcha)
 [![Total Downloads](https://poser.pugx.org/tekintian/tekintcaptcha/downloads.svg)](https://packagist.org/packages/tekintian/tekintcaptcha)
 
