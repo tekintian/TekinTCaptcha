@@ -44,15 +44,15 @@ elseif (isset($_POST['Ticket']) && $_POST['Ticket']!=''):
     <?php
     // If the form submission includes the "g-captcha-response" field
     // Create an instance of the service using your AppSecretKey
-    $recaptcha = new \TekinTCaptcha\TekinTCaptcha($aid,$AppSecretKey, new \TekinTCaptcha\RequestMethod\SocketPost());
+    $TekinTCaptcha = new \TekinTCaptcha\TekinTCaptcha($aid,$AppSecretKey, new \TekinTCaptcha\RequestMethod\SocketPost());
 
     // If file_get_contents() is locked down on your PHP installation to disallow
     // its use with URLs, then you can use the alternative request method instead.
     // This makes use of fsockopen() instead.
-    //  $recaptcha = new \TekinTCaptcha\TekinTCaptcha($AppSecretKey, new \TekinTCaptcha\RequestMethod\SocketPost());
+    //  $TekinTCaptcha = new \TekinTCaptcha\TekinTCaptcha($AppSecretKey, new \TekinTCaptcha\RequestMethod\SocketPost());
 
     // Make the call to verify the response and also pass the user's IP address
-    $resp = $recaptcha->verify($_POST['Ticket'], $_POST['Randstr']);
+    $resp = $TekinTCaptcha->verify($_POST['Ticket'], $_POST['Randstr']);
   
     if ($resp->isSuccess()):
     // If the response is a success, that's it!

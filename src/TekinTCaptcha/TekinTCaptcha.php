@@ -72,12 +72,12 @@ class TekinTCaptcha
     {
         // Discard empty solution submissions
         if (empty($Ticket)) {
-            $recaptchaResponse = new Response(false, array('missing-input-ticket'));
-            return $recaptchaResponse;
+            $TekinTCaptchaResponse = new Response(false, array('missing-input-ticket'));
+            return $TekinTCaptchaResponse;
         }
         if (empty($Randstr)) {
-            $recaptchaResponse = new Response(false, array('missing-input-randstr'));
-            return $recaptchaResponse;
+            $TekinTCaptchaResponse = new Response(false, array('missing-input-randstr'));
+            return $TekinTCaptchaResponse;
         }
 
         $params = new RequestParameters($this->aid, $this->AppSecretKey, $Ticket, $Randstr, $UserIP);
