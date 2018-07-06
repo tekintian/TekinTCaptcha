@@ -66,14 +66,11 @@ elseif (isset($_POST['Ticket']) && $_POST['Ticket']!=''):
         ?>
         <h2>Something went wrong</h2>
         <p>The following error was returned:
-         错误信息：<?php
-            foreach ($resp->getErrMsg() as $msg) {
-                echo '<kbd>' , $msg , '</kbd> ';
-            }
-            ?>
+        
          <?php
-             echo '<kbd>返回状态码：'. $resp->getStatus() .'</kbd> ';
-             echo '<kbd>恶意等级：'. $resp->getEvilLevel() .'</kbd> ';
+           echo '<kbd>错误代码：' .$resp->getErrMsg(). '</kbd> ';
+                echo '<kbd>返回状态码：'. $resp->getStatus() .'</kbd> ';
+                echo '<kbd>恶意等级：'. $resp->getEvilLevel() .'</kbd> ';
             ?>
             </p>
         <p>Check the error msg code reference blow <kbd>
