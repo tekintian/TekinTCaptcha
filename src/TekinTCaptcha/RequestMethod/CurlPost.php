@@ -51,6 +51,7 @@ class CurlPost implements RequestMethod
             ),
             CURLINFO_HEADER_OUT => false,
             CURLOPT_HEADER => false,
+            CURLOPT_DNS_USE_GLOBAL_CACHE => true,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_SSL_VERIFYPEER => true
         );
